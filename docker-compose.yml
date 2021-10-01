@@ -1,0 +1,8 @@
+services:
+  orange:
+    build: .
+    image: ghcr.io/kittiwatpoom/static-web:dev
+    ports:
+      - "8080:80"
+    environment:
+      SERVICE_VERSION: v1
